@@ -2,11 +2,14 @@
 
 var str = process.argv[2];
 
-function rkn (str) {
+function rkn () {
+    
     str = str.replace(/Р/gi, '');
     str = str.replace(/К/gi, '');
     str = str.replace(/Н/gi, '');
-    console.log(str);
+    return str;
 }
 
+rkn (str);
 
+process.stdout.write(str);
